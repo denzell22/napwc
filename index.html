@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2;url=user/user_home.php"> <!-- Adjust the time delay before redirection if needed -->
+    <title>Redirecting...</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .preloader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pre-loader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Content to be shown after redirection -->
+    <div class="container d-none">
+        <p>If you are not redirected, <a href="user/user_home.php">click here</a>.</p>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Hide the pre-loader and show the content after the specified delay
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.preloader').addClass('d-none');
+                $('.container').removeClass('d-none');
+            }, 3000); // Adjust the delay time in milliseconds
+        });
+    </script>
+</body>
+
+</html>
