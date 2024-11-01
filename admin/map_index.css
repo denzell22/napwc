@@ -1,0 +1,60 @@
+.wrapper {
+    width: 1250px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #C9B590;
+}
+.thumbnail {
+    width: 90px;
+    height: 85px;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Updated styles from the previous CSS */
+.custom-bg {
+    background-color: #4E7130;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #4E7130;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus,
+input[type="text"]:hover,
+textarea:hover,
+input[type="file"]:hover {
+    border-color: #405925;
+}
+.btn-primary {
+    background-color: #4E7130;
+    border-color: #4E7130;
+}
+.btn-primary:hover {
+    background-color: #405925;
+    border-color: #405925;
+}
+.btn-secondary {
+    background-color: #6C757D;
+    border-color: #6C757D;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}

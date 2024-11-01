@@ -1,0 +1,36 @@
+.workspace-container {
+    padding: 20px;
+}
+
+#admin-users h2 {
+    color: white;
+    text-align: center;
+    width: 500px;
+    background-color: #436850;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Additional styling for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid #12372A; /* Set border thickness and color */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #12372A; /* Set border thickness and color */
+}
+
+th {
+    color: white;
+    background-color: #12372A;
+}
+
+tr:nth-child(even) {
+    background-color: transparent; /* Remove background color */
+}

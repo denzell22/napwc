@@ -1,0 +1,49 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 300px;
+}
+
+.table {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* Add some spacing to buttons in the table */
+.table .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Style for the download button */
+#downloadBtn {
+    margin-bottom: 20px;
+}
+
+/* Pagination style */
+.pagination {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Move pagination to the top */
+.pagination-top {
+    margin-bottom: 20px;
+    text-align: center;
+}

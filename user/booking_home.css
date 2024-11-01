@@ -1,0 +1,158 @@
+/* Facilities */
+.facilities {
+    padding: 80px 20px; 
+    background-color: #f9f9f9; 
+    text-align: center; 
+}
+
+.facilities h2 {
+    margin: 20px 0 0;
+    font-size: 20px; 
+}
+
+.facilities p {
+    padding: 20px;
+    font-size: 17px;
+}
+
+.facility-list {
+    display: flex; 
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+}
+
+.facility-box {
+    width: 300px; 
+    text-align: center; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    transition: transform 0.3s; 
+    padding: 15px; 
+}
+
+.facility-box img {
+    width: 100%; 
+    height: 250px; 
+}
+
+.facility-box h3 {
+    margin: 10px 0; 
+    font-size: 20px; 
+}
+
+.facility-box:hover {
+    transform: scale(1.05); 
+}
+
+.facility-box p {
+    margin: 5px 0; 
+    font-size: 15px; 
+    color: #666; 
+}
+
+/* Appointments Icon */
+.appointment-buttons {
+    position: absolute; /* Fixed positioning */
+    top: 250px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    display: flex; /* Flex container for buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.book-now {
+    background-color: #007bff; /* Blue background */
+}
+
+.my-appointments {
+    background-color: #00ff15; /* Green background */
+}
+
+.book-now, 
+.my-appointments {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding around the icon */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Center items vertically */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Book Now Button */
+.book-now:hover, 
+.my-appointments:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.book-now i, 
+.my-appointments i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.book-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.book-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* On top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.modal-content {
+    background-color: #fff; /* White background */
+    margin: 15% auto; /* Center modal */
+    padding: 20px; 
+    border-radius: 8px; 
+    width: 80%; /* Default width */
+    max-width: 400px; /* Max width */
+    text-align: center; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.modal .close {
+    position: absolute; /* Position close button */
+    top: 10px;
+    right: 20px;
+    font-size: 24px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 600px) {
+    .modal-content {
+        margin: 50px auto; /* Center modal */
+        width: 90%; /* Full width on mobile */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .flatpickr-day.restricted {
+        background-color: rgba(255, 0, 0, 0.3); /* Ensure restricted date styles remain */
+        color: #818589; /* Grey text */
+        border-radius: 50%; /* Round shape */
+        cursor: not-allowed; /* Not-allowed cursor */
+    }
+} 

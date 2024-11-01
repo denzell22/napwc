@@ -1,0 +1,48 @@
+.custom-bg {
+    background-color: #4E7130   ; /* Set your desired background color */
+}
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to the form container */
+    border-radius: 8px; /* Add border radius for a rounded look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    background-color: #C9B590; /* Set a background */
+}
+.form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+}
+label {
+    font-weight: bold; /* Make labels bold */
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    margin-top: 8px;
+}
+.btn-primary {
+    background-color: #4E7130;
+    border-color: #4E7130;
+}
+.btn-primary:hover {
+    background-color: #405925;
+    border-color: #405925;
+}
+.btn-secondary {
+    background-color: #6C757D;
+    border-color: #6C757D;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}

@@ -1,0 +1,49 @@
+.workspace-container {
+    padding: 20px;
+}
+
+#admin-messages h2 {
+    color: white;
+    text-align: center;
+    width: 300px;
+    background-color: #436850;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Additional styling for the table */
+table {
+    border-collapse: collapse;
+    width: 50%; /* Set a smaller width */
+    border: 4px solid #000; /* Add a thicker border */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 4px solid #000; /* Add a thicker border */
+}
+
+th {
+    background-color: #12372A;
+    color: white;
+}
+
+/* Style for the button */
+.report-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px; /* Move the button below the table */
+    margin-left: 20px; /* Add margin to the left */
+}
+
+.report-button:hover {
+    background-color: #45a049;
+}

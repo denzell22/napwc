@@ -1,0 +1,156 @@
+#map {
+    height: 70vh;
+    width: 75%;
+    float: left;
+}
+
+.sidebar {
+    height: 70vh;
+    width: 25%;
+    float: left;
+    padding: 10px;
+    overflow: auto;
+    background-color: #4E7130;
+}
+
+.container {
+    display: flex;
+    background-color: #4E7130;
+    border: 10px solid #4E7130;
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button-list li {
+    margin-bottom: 5px;
+}
+
+.button-list button {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #95B250;
+    color: white;
+}
+
+.category-header {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.category-list button {
+    width: 100%;
+    padding: 8px;
+}
+
+#map { height: 600px; }
+
+                
+        #search-container, #waypoints-container {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #95B250; /* Shared background color */
+            border-radius: 5px;
+        }
+
+        /* Common input field style for search and waypoint sections */
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        /* Search input field */
+        #markerSearch {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        /* Search and Waypoint buttons */
+        #searchButton, .waypoint-btn {
+            background-color: #4E7130;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        #searchButton:hover, .waypoint-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Style for search results */
+        #search-results-list, #waypoints-list {
+            display: none; /* Default state: hidden */
+            padding: 0;
+            margin: 0;
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            
+        }
+
+        #search-results-list li, #waypoints-list li {
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        #search-results-list li:hover, #waypoints-list li:hover {
+            background-color: #f0f0f0;
+        }
+
+   
+
+        
+
+        .popup-content {
+            background-color: #fff; /* White background */
+            border-radius: 8px;     /* Rounded corners */
+            padding: 10px;          /* Padding inside popup */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            font-family: Arial, sans-serif; /* Font style */
+        }
+
+        .popup-image {
+            display: block;
+            margin: 0 auto;
+            width: 250px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .popup-description {
+            text-align: justify;  /* Justify the text */
+            margin: 5px 0;       /* Optional: Add some margin for spacing */
+        }
+
+        .popup-content strong {
+            font-size: 1.2em; /* Larger font for title */
+        }
+
+        .popup-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .popup-button:hover {
+            background-color: #45a049;
+        }

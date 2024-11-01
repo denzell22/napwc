@@ -1,0 +1,53 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+#scanner-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #adbc9f; /* Container background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 50px auto; /* Center the container */
+}
+
+#reader {
+    background-color: #fbfada; /* Scanner background color */
+    height: 500px;
+}
+
+#scan-result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#result {
+    background-color: #12372a; /* Result background color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin at the top */
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #reader {
+        height: 400px;
+        margin: auto 20px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}

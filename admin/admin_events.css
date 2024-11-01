@@ -1,0 +1,102 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.header {
+    background-color: #343a40;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.main-workspace {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 100px;
+}
+
+.add-event-button,
+.archive-event-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.archive-event-button {
+    background-color: #df2935;
+    margin-left: 10px; /* Add margin to separate the buttons */
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 100px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center grid items horizontally */
+}
+
+.event-item {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+.event-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    flex-grow: 1;
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-image {
+    height: 250px;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.footer {
+    width: 100%; /* Take the full width of the container */
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0; /* Stick to the bottom */
+}

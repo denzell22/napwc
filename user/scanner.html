@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>QR SCANNER</title>
+
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fefae0;;
+        }
+
+        #redirectBtn {
+            position: absolute;
+            width: 150px;
+            top: 50px;
+            left: 50px;
+            background-color: #d62828;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #redirectBtn:hover {
+            background-color: #780000;
+        }
+
+        #scanner-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        #reader {
+            flex: 1;
+            background-color: #535252;
+            height: 300px;
+        }
+
+        #scan-result-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #result {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #reader {
+                height: 200px;
+            }
+
+            #result {
+                font-size: 16px;
+            }
+
+            #redirectBtn {
+                position: absolute;
+                width: 150px;
+                top: 20px;
+                left: 20px;
+                background-color: #d62828;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            #redirectBtn:hover {
+                background-color: #780000;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="redirectBtn" onclick="window.location.href='tree_universe.php'">Back</button>
+
+    <div id="scanner-container" class="container mt-5">
+        <div id="reader"></div>
+        <div id="scan-result-container">
+            <h4 class="mb-3">SCAN RESULT</h4>
+            <div id="result">Result Here</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="html5-qrcode.min.js"></script>
+
+    <script type="text/javascript">
+        function onScanSuccess(qrCodeMessage) {
+            // Open the link automatically
+            window.location.href = qrCodeMessage;
+        }
+
+        function onScanError(errorMessage) {
+            // Handle scan error
+        }
+
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "reader", {
+                fps: 10,
+                qrbox: 250
+            });
+        html5QrcodeScanner.render(onScanSuccess, onScanError);
+
+    </script>
+
+</body>
+
+</html>

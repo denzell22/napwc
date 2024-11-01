@@ -1,0 +1,52 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.booking-title {
+    background-color: #2ecc71;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.booking-modal {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Ensures labels are on a new line */
+}
+
+.form-control {
+    height: 40px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    font-size: 18px;
+}
+
+.go-back-btn {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.note {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 30px;
+}

@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+/* Grid content styles */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 30px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    align-items: start; 
+    margin-top: 100px;
+}
+
+.video-box {
+    width: 700px; 
+    height: 500px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+.video-box video {
+    width: 700px; 
+    height: 500px; 
+    border-radius: 30px;  
+    object-fit: cover; 
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.text-content p {
+    text-align: justify;
+    line-height: 2;
+    font-size: 15px; /* Paragraph font size */
+    font-weight: normal;
+    width: 100%;
+}
+
+/* Facilities */
+.facilities {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.facilities h2 {
+    margin: 20px 0 0 0;
+    font-size: 17px; /* Uniform h2 size */
+}
+
+.facilities p {
+    padding: 20px;
+    font-size: 15px; /* Paragraph font size */
+}
+
+.facility-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.facility-box {
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.facility-box img {
+    width: 100%;
+    height: 250px;
+}
+
+.facility-box h3 {
+    margin: 10px 0;
+    font-size: 17px; /* Uniform h3 size */
+}
+
+.facility-box:hover {
+    transform: scale(1.05);
+}
+
+.facility-box p {
+    margin: 5px 0;
+    font-size: 15px; /* Paragraph font size */
+    color: #666;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    height: 700px;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    opacity: 1;
+}
+
+.event {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: opacity 0.7s ease;
+}
+
+.event h2, h3 {
+    margin: 30px 10px 0;
+    font-size: 17px; /* Uniform h3 size */
+    color: #000;
+    text-align: center;
+    z-index: 1;
+}
+
+.event p {
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+    z-index: 1;
+    font-size: 15px; /* Paragraph font size */
+}
+
+/* Button styles */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column; /* Stack video and text vertically */
+        align-items: center;
+        margin-top: 50px; /* Adjust margin for mobile view */
+    }
+    
+    .video-box {
+        width: 100%; /* Full width on mobile */
+        height: 300px; 
+        margin: 0 auto;
+    }
+
+    .video-box video {
+        width: 100%; /* Full width video */
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .text-content {
+        width: 100%; /* Full width text box */
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .facility-box p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .upcoming-events {
+        padding: 10px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-images img {
+        height: 400px; /* Reduced height for event images */
+        object-fit: cover;
+    }
+
+    .event {
+        height: auto; /* Allow the event container to adjust based on content */
+        padding: 10px; /* Add padding for better spacing on mobile */
+    }
+
+    .event p {
+        margin: 0;
+        color: #333;
+        text-align: center;
+        z-index: 1;
+        font-size: 14px;
+    }
+}
